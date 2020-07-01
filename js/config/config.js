@@ -3,8 +3,6 @@ const fps = 60;
 
 (() => {
 
-    // common
-
     const plane = (callback=false) => {
         const o = {
             w: 70,
