@@ -1,0 +1,205 @@
+body {
+    display: flex;
+    flex-direction: column;
+    color: #FFC107;
+    overflow: hidden;
+}
+
+.controls{
+    color:#ffffff !important;
+    font-size: 1.3rem !important;
+}
+
+.intro{
+    background: url('../img/background-1.jpg');
+}
+.state{
+    height: 100vh !important;
+}
+.logo{
+    width: 33rem;
+    height: 37rem;
+}
+ 
+.developer-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.member{
+    margin-top: 2% !important;
+}
+
+.buttons{
+    display:flex;
+}
+
+.start-war{
+    color:#FFC107 !important;
+    font-size: 2rem !important;
+}
+
+
+/*game css*/
+#app {
+    background: #000000;
+    font-size: 14px;
+    overflow: hidden;
+    width: 100% !important;
+    height: 100vh !important;
+}
+
+#logo {
+    pointer-events: none;
+    position: relative;
+    z-index: 2;
+    padding: 0.8% 0;
+    width: 100%;
+    text-align: center;
+}
+
+#logo img {
+    transition: all 0.5s ease;
+    width: 10%;
+}
+
+#logo.play-status img {
+    width: 6%;
+}
+
+#container,
+#container>div {
+    width: 100%;
+    height: 100%;
+}
+
+#container>div {
+    padding-top: 8%;
+    visibility: hidden;
+    text-align: center;
+    opacity: 0;
+}
+
+#container>div.action {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+
+#start-btn p:nth-child(2) {
+    display: none;
+}
+
+#start-btn:disabled p:nth-child(1) {
+    display: none;
+}
+
+#start-btn:disabled p:nth-child(2) {
+    display: block;
+}
+
+#play {
+    background: url('../img/background-1.jpg');
+    background-size: 100% 100%;
+}
+
+#canvas {
+    z-index: 3;
+    pointer-events: none;
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+}
+
+.content .header {
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .header ul {
+    width: 45%;
+    height: 50px;
+    font-size: 20px;
+}
+
+.content .header li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.content .header ul,
+.content .header ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content .header .option img {
+    cursor: pointer;
+}
+
+.content .header .option img:nth-child(2) {
+    display: none;
+}
+
+.content .header .option li:active {
+    opacity: 0.5;
+}
+
+.content .header .option li.active img:nth-child(1) {
+    display: none;
+}
+
+.content .header .option li.active img:nth-child(2) {
+    display: block;
+}
+
+#over .message {
+    margin-left: 29%;
+    width: 71%;
+    display: flex;
+}
+
+#over .message img {
+    width: 30px;
+    height: 30px;
+}
+
+#over .message span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 20%;
+}
+
+#over .message span:nth-last-child(1) {
+    width: 60%;
+    padding-left: 4%;
+    justify-content: space-between;
+}
+
+#over input {
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1rem;
+    width: 35%;
+    margin: 0 auto;
+    height: 30px;
+}
+
+table {
+    height: 80%;
+    overflow: hidden;
+}
+
+.buttons{
+    display: flex;
+}
