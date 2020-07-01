@@ -2,7 +2,6 @@ body {
     display: flex;
     flex-direction: column;
     color: #FFC107;
-    overflow: hidden;
 }
 
 .controls{
@@ -13,7 +12,7 @@ body {
 .intro{
     background: url('../img/background-1.jpg');
 }
-.state{
+.row{
     height: 100vh !important;
 }
 .logo{
@@ -39,7 +38,6 @@ body {
     color:#FFC107 !important;
     font-size: 2rem !important;
 }
-
 
 /*game css*/
 #app {
