@@ -52,6 +52,7 @@ li{
     outline: none;
     cursor: pointer;
     overflow: hidden;
+    height: 2.5rem !important;
 }
 
 
@@ -85,7 +86,7 @@ li{
 }
 
 .absolute{
-    position: absolute;
+    position: absolute !important;
     top: 0;
     left: 0;
 }
