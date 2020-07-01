@@ -11,14 +11,17 @@ body {
 
 .intro{
     background: url('../img/background-1.jpg');
-}
-.row{
+    background-repeat: repeat-y;
     height: 100vh !important;
 }
+
 .logo{
-    width: 33rem;
-    height: 37rem;
+    width: 33rem !important;
+    height: 37rem !important;
 }
+ .card{
+    margin-top: 20px !important;
+ }
  
 .developer-pic{
     width: 150px;
@@ -26,12 +29,9 @@ body {
     border-radius: 50%;
 }
 
-.member{
-    margin-top: 2% !important;
-}
-
 .buttons{
     display:flex;
+    margin-top: -5rem!important;
 }
 
 .start-war{
@@ -50,10 +50,10 @@ body {
 
 #logo {
     pointer-events: none;
-    position: relative;
+    position: relative !important;
     z-index: 2;
-    padding: 0.8% 0;
-    width: 100%;
+    padding: 0.8% 0 !important;
+    width: 100% !important;
     text-align: center;
 }
 
@@ -200,4 +200,44 @@ table {
 
 .buttons{
     display: flex;
+}
+
+@media only screen and (max-width: 550px)
+{
+    .developer-pic{
+        padding:2% !important;
+    }
+    .logo{
+        width: 20rem !important;
+        height: 25rem !important;
+    }
+    .intro{
+        height: 120vh !important;
+    }
+    
+}
+
+@media only screen and (max-width: 1025px){
+    .buttons{
+        margin: -35rem 0 0 0rem!important;
+    }
+    .start-war{
+        color:#FFC107 !important;
+        font-size: 2rem !important;
+        margin-top: -15rem !important;
+    }
+    #app {
+        width: 100% !important;
+        height: 100vh !important;
+    }
+}
+@media only screen and (max-width: 375px){
+    .developer-pic{
+        padding:2% !important;
+        height: 75px !important;
+        width: 75px !important;
+    }
+    .details{
+        font-size: 0.8rem !important;
+    }
 }

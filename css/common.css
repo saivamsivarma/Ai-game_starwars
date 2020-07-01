@@ -128,3 +128,11 @@ tbody tr {
     background:rgba(255,255,255,0.5);
     -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);
 }
+@media only screen and (max-width: 1025px){
+    .pre{
+        font-size: 1.5rem !important;
+        margin:-10rem 0 0 0% !important;
+        width: 100% !important;
+        padding:5% !important;
+    }
+}
