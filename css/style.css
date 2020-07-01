@@ -15,12 +15,10 @@ body {
 }
 
 .logo{
-    width: 33rem;
-    height: 37rem;
+    width: 33rem !important;
+    height: 37rem !important;
 }
- .card{
-    margin-top: 20px;
- }
+ 
  
 .developer-pic{
     width: 150px;
@@ -198,4 +196,29 @@ table {
 
 .buttons{
     display: flex;
+}
+
+@media only screen and (max-width: 550px)
+{
+    .developer-pic{
+        padding:2% !important;
+    }
+    .logo{
+        width: 20rem !important;
+        height: 25rem !important;
+    }
+    .intro{
+        height: 120vh !important;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .developer-pic{
+        padding:2% !important;
+        height: 75px !important;
+        width: 75px !important;
+    }
+    .details{
+        font-size: 0.6rem !important;
+    }
 }
