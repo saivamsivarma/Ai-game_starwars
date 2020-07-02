@@ -2,7 +2,7 @@ class Rank extends Scene {
     setup() {
         super.setup();
         this.event();
-        this.storageDataKey = "playerData";
+        this.storageDataKey = "PlayerData";
         this.addData();
         this.rank();
     }

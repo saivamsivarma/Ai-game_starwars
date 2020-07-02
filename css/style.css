@@ -23,7 +23,7 @@ body {
 .developer-pic{
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 50%;;
 }
 
 .buttons{
@@ -35,6 +35,9 @@ body {
     font-size: 2rem !important;
 }
 
+.card{
+    border: 3px solid #FFC107 !important;
+}
 .respones{
     font-size: 1.5rem !important;
     color:#ffae00 !important;
@@ -65,7 +68,7 @@ body {
 
 #logo.play-status img {
     width: 6%;
-    margin-top: -1rem !important;
+    margin-top: -1.5rem !important;
 }
 
 #container,
@@ -199,6 +202,7 @@ body {
 table {
     height: 80%;
     overflow: hidden;
+    color:#FFC107 !important;
 }
 
 .buttons{
@@ -226,7 +230,7 @@ table {
     position: absolute;
     height: 6px;
     width: 100%;
-    background-color: black;
+    background-color: #000000;
     bottom: 0;
   }
   
@@ -248,15 +252,15 @@ table {
   .top {
     width: 120px;
     height: 120px;
-    border: 6px solid black;
+    border: 6px solid #000000;
     border-radius: 50%;
-    box-shadow: inset -10px 0px 0px 5px  #e8e3e7;
+    box-shadow: inset -10px 0px 0px 5px  #FFC107;
   }
   
   .eye {
     height: 33%;
     width: 33%;
-    background-color: black;
+    background-color: #000000;
     border-radius: 50%;
     top: 30%;
     transform: translate(-50%, -50%);
@@ -270,7 +274,7 @@ table {
     position: absolute;
     height: 25%;
     width: 25%;
-    background-color: black;
+    background-color: #000000;
     border-radius: 50%;
     right: -55%;
     bottom: 7%;
@@ -280,7 +284,7 @@ table {
     height: 10%;
     width: 85%;
     bottom: 35%;
-    border-top: 12px solid lightblue;
+    border-top: 12px solid #FFC107;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
   }
@@ -289,7 +293,7 @@ table {
     content: "";
     height: 50%;
     width: 16%;
-    background-color: black;
+    background-color: #000000;
     position: absolute;
     display: block;
     top: -63%;
@@ -301,7 +305,7 @@ table {
     content: "";
     height: 50%;
     width: 16%;
-    background-color: black;
+    background-color: #000000;
     position: absolute;
     display: block;
     top: -63%;
@@ -312,7 +316,7 @@ table {
   .bottom {
     height: 50%;
     width: 100%;
-    background-color: black;
+    background-color: #000000;
   }
   
   .droid-body {
@@ -323,7 +327,7 @@ table {
     left: 50%;
     overflow: hidden;
     border-radius: 50%;
-    border: 6px solid black;
+    border: 6px solid #000000;
     animation: spin 1s linear infinite;
   }
   
@@ -339,9 +343,9 @@ table {
   .circle {
     width: 50%;
     height: 50%;
-    border: 6px solid black;
+    border: 6px solid #000000;
     border-radius: 50%;
-    background-color: #FDC23E;
+    background-color:#FFC107;
   }
   
   .circle-one {
@@ -362,9 +366,9 @@ table {
   .inner {
     width: 40%;
     height: 40%;
-    border: 6px solid black;
+    border: 6px solid #000000;
     border-radius: 50%;
-    background-color: white;
+    background-color: #FFC107;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -374,7 +378,7 @@ table {
     width: 7%;
     height: 7%;
     border-radius: 50%;
-    background-color: black;
+    background-color: #000000;
   }
   
   .dot-one {
@@ -390,7 +394,7 @@ table {
   .stroke {
     height: 50%;
     width: 3%;
-    background-color: black;
+    background-color: #000000;
     z-index: -1;
   }
   
@@ -421,8 +425,8 @@ table {
     left: 50%;
     overflow: hidden;
     border-radius: 50%;
-    border: 6px solid black;
-    box-shadow: inset -20px -10px 0px black;
+    border: 6px solid #000000;
+    box-shadow: inset -20px -10px 0px #000000;
     opacity: .2;
   }
   
@@ -439,7 +443,8 @@ table {
 @media only screen and (max-width: 550px)
 {
     .developer-pic{
-        padding:2% !important;
+        height: 125px !important;
+        width: 125px !important;
     }
     .logo{
         width: 20rem !important;
@@ -450,13 +455,18 @@ table {
     }
 }
 
-@media only screen and (max-width: 350px){
+@media only screen and (max-width: 375px){
     .developer-pic{
         padding:2% !important;
         height: 75px !important;
         width: 75px !important;
     }
     .details{
-        font-size: 0.6rem !important;
+        font-size: 0.9rem !important;
+    }
+}
+@media only screen and (max-width: 375px){
+    .details{
+        font-size: 0.7rem !important;
     }
 }
