@@ -462,7 +462,13 @@ table {
         width: 75px !important;
     }
     .details{
-        font-size: 0.9rem !important;
+        font-size: 0.7rem !important;
+    }
+    .respones{
+        font-size:0.9rem !important;
+    }
+    .btn{
+        font-size: 0.8 rem !important;
     }
 }
 @media only screen and (max-width: 375px){
