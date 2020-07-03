@@ -256,6 +256,10 @@ table {
     display: flex;
 }
 
+.get{
+    width: 20% !important; 
+    margin-top: 2rem !important;
+}
 
 @media only screen and (max-width: 550px)
 {
@@ -273,6 +277,9 @@ table {
     .btns{
         font-size: 0.5 rem !important;
     }
+    .get{
+        width: 50% !important;
+    }
 }
 
 @media only screen and (max-width: 375px){
@@ -289,6 +296,9 @@ table {
     }
     .btns{
         font-size: 0.8 rem !important;
+    }
+    .get{
+        width: 100% !important;
     }
 }
 @media only screen and (max-width: 375px){
