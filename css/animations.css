@@ -1,0 +1,277 @@
+
+.overlay {
+    background: #000000;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    opacity: 1;
+    z-index: 15;
+    animation: vaderAppear 7s linear infinite;
+  }
+  
+  .animations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .animations .frame {
+    height: 500px !important;
+    width: 500px !important;
+  }
+  .animations .frame canvas {
+    background: #000000;
+    height: 500px !important;
+    width: 500px !important;
+    z-index: 5;
+  }
+  
+  @keyframes vaderAppear {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: .75;
+    }
+    50% {
+      opacity: .5;
+    }
+    75% {
+      opacity: .25;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+
+  /*animations*/
+.droid * {
+    position: absolute;
+  }
+  
+  .droid {
+   margin-top: -10rem !important;
+   width: 400px;
+   height: 400px;
+   transform: translateY(0%);
+   top: 50%;
+   left: 50%;
+  }
+  
+  .droid::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background-color: #000000;
+    bottom: 0;
+  }
+  
+  .droid-head {
+    width: 132px;
+    height: 132px;
+    top: 42%;
+    left: 42%;
+    transform: translateX(-70%) rotate(-40deg);
+    z-index: 1;
+  }
+  
+  .head-top {
+   height: 50%;
+   overflow: hidden;
+   position: relative;
+  }
+  
+  .top {
+    width: 120px;
+    height: 120px;
+    border: 6px solid #000000;
+    border-radius: 50%;
+    box-shadow: inset -10px 0px 0px 5px  #FFC107;
+  }
+  
+  .eye {
+    height: 33%;
+    width: 33%;
+    background-color: #000000;
+    border-radius: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    z-index: 1;
+  }
+  
+  .eye::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    background-color: #000000;
+    border-radius: 50%;
+    right: -55%;
+    bottom: 7%;
+  }
+  
+  .head-bottom {
+    height: 10%;
+    width: 85%;
+    bottom: 35%;
+    border-top: 12px solid #FFC107;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+  
+  .head-bottom::before {
+    content: "";
+    height: 50%;
+    width: 16%;
+    background-color: #000000;
+    position: absolute;
+    display: block;
+    top: -63%;
+    transform: rotate(55deg);
+    left: -11%;
+  }
+  
+  .head-bottom::after {
+    content: "";
+    height: 50%;
+    width: 16%;
+    background-color: #000000;
+    position: absolute;
+    display: block;
+    top: -63%;
+    transform: rotate(-55deg);
+    right: -11%;
+  }
+  
+  .bottom {
+    height: 50%;
+    width: 100%;
+    background-color: #000000;
+  }
+  
+  .droid-body {
+    height: 45%;
+    width: 45%;
+    transform: translateX(-50%);
+    bottom: 0;
+    left: 50%;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 6px solid #000000;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+      0% {
+          transform: translateX(-50%) rotate(0);
+      }
+      100% {
+          transform: translateX(-50%) rotate(-360deg);
+      }
+  }
+  
+  .circle {
+    width: 50%;
+    height: 50%;
+    border: 6px solid #000000;
+    border-radius: 50%;
+    background-color:#FFC107;
+  }
+  
+  .circle-one {
+    bottom: -20%;
+    right: 0;
+  }
+  
+  .circle-two {
+    top: -15%;
+    right: -20%;
+  }
+  
+  .circle-third {
+    top: 0;
+    left: -20%;
+  }
+  
+  .inner {
+    width: 40%;
+    height: 40%;
+    border: 6px solid #000000;
+    border-radius: 50%;
+    background-color: #FFC107;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .dot {
+    width: 7%;
+    height: 7%;
+    border-radius: 50%;
+    background-color: #000000;
+  }
+  
+  .dot-one {
+    bottom: 22%;
+    left: 20%;
+  }
+  
+  .dot-two {
+    top: 40%;
+    right: 40%;
+  }
+  
+  .stroke {
+    height: 50%;
+    width: 3%;
+    background-color: #000000;
+    z-index: -1;
+  }
+  
+  .stroke-one {
+    top: 35%;
+    left: 35%;
+    transform: rotate(-45deg);
+  }
+  
+  .stroke-two {
+    top: -10%;
+    left: 40%;
+    transform: rotate(80deg);
+  }
+  
+  .stroke-three {
+    top: 20%;
+    right: 10%;
+    transform: rotate(25deg);
+  }
+  
+  
+  .body-shadow-crop {
+       height: 45%;
+    width: 45%;
+    transform: translateX(-50%);
+    bottom: 0;
+    left: 50%;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 6px solid #000000;
+    box-shadow: inset -20px -10px 0px #000000;
+    opacity: .2;
+  }
+  
+  .body-shadow {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      position: absolute;
+      box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.4);
+      left: -50px;
+      top: -20px;
+  }
+

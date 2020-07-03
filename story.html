@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>StarWars</title>
+</head>
+
+<body style="background-color: #000000;overflow: hidden !important;">
+    <div class="container-fluid d-none d-xl-block">
+        <div class="row">
+            <div class="col-12">
+                <div id="logo">
+                    <img src="./img/logo-01.svg" alt="logo">
+                </div>
+            </div>
+            <div class="col-7 p-1 dialog" id="dialog1" style="height: 100vh !important;">
+                <div class="con">
+                    <div class="row">
+                        <div class="col-3 " style="margin-top: -3rem !important;">
+                            <img src="img/story/rey.png" alt="rey" width=120% height=100%>
+                        </div>
+                        <div class="col-9 p-3">
+                            <div class="name">Rey Walker</div>
+                            <div class="line"></div>
+                            <div class="dialog">Is there any news?</div>
+                            <div class="next">
+                                <a class="btn" href="javascript:showonlyone('dialog2');">next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-7 offset-4 p-2 dialog" id="dialog2" style="height: 100vh !important;">
+                <div class="con" id="dialog1">
+                    <div class="row">
+                        <div class="col-9 p-3">
+                            <div class="name float-right">Spy</div>
+                            <div class="line2"></div>
+                            <div class="dialog2 p-2 float-right" >It is confirmed that darth vader is ready to launch an attack on oryn.</div>
+                            <div class="next p-1" style="margin: 8rem 0 0 0rem !important; ">
+                                <a class="btn" href="javascript:showonlyone('dialog3');">next</a>
+                            </div>
+                        </div>
+                        <div class="col-3" style="margin:-3rem 0 0 -5rem !important;">
+                            <img src="img/story/spy.png" alt="spy" width=190% height=100%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-7 p-1 dialog" id="dialog3" style="height: 100vh !important;">
+                <div class="con">
+                    <div class="row">
+                        <div class="col-3 " style="margin-top: -3rem !important;">
+                            <img src="img/story/rey.png" alt="rey" width=120% height=100%>
+                        </div>
+                        <div class="col-9 p-3">
+                            <div class="name">Rey Walker</div>
+                            <div class="line"></div>
+                            <div class="dialog2 mt-5" style="margin-top: 3rem !important;display: unset !important;">Thank you for your information oryn army will be ready for the counter attack.</div>
+                            <div class="next" style="margin-top: 4rem !important;">
+                                <a class="btn" href="javascript:showonlyone('dialog4');">next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-7 offset-4 p-2 dialog" id="dialog4" style="height: 100vh !important;">
+                <div class="con" id="dialog1">
+                    <div class="row">
+                        <div class="col-9 p-3">
+                            <div class="name float-right">Rey Walker</div>
+                            <div class="line2"></div>
+                            <div class="dialog2 p-2 float-right" >It is confirmed  that darth vader is ready to launch an attack on oryn what would be our counter attack ?</div>
+                            <div class="next p-1" style="margin: 8rem 0 0 0rem !important; ">
+                                <a class="btn" href="javascript:showonlyone('dialog5');">next</a>
+                            </div>
+                        </div>
+                        <div class="col-3" style="margin:-5rem 0 0 -5rem !important;">
+                            <img src="img/story/rey2.png" alt="Rey Walker" width=120% height=100%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-7 p-2 dialog" id="dialog5" style="height: 100vh !important;">
+                <div class="con">
+                    <div class="row">
+                        <div class="col-3 ">
+                            <img src="img/story/yoda.png" alt="yoda" width=120% height=100%>
+                        </div>
+                        <div class="col-9 p-3">
+                            <div class="name">Yoda</div>
+                            <div class="line"></div>
+                            <div class="dialog2 mt-5" style="margin-top: 3rem !important;display: unset !important;">General what is the postion of our star troopers?</div>
+                            <div class="next" style="margin-top: 3rem !important;">
+                                <a class="btn" href="javascript:showonlyone('dialog6');">next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10 offset-1 p-2 dialog" id="dialog6"  style="height: 100vh !important;">
+                <div class="con" id="dialog1">
+                    <div class="row">
+                        <div class="col-9 p-3">
+                            <div class="name float-right">chewbacca</div>
+                            <div class="line2" style="margin-left: 45rem !important;"></div>
+                            <div class="dialog2 p-2 float-right" >There are only few in the perfect condition in order to launch a counter attack so it would be a tough to fight against the mighty death star.</div>
+                            <div class="next" style="margin-left: 0rem !important;">
+                                <a class="btn" href="javascript:showonlyone('dialog7');">next</a>
+                            </div>
+                        </div>
+                        <div class="col-3" style="margin-left:-5rem !important;">
+                            <img src="img/story/chewbacca.png" alt="chewbacca" width=150% height=100%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10 p-1 dialog" id="dialog7">
+                <div class="con">
+                    <div class="row">
+                        <div class="col-3 " style="margin-top: -3rem !important;">
+                            <img src="img/story/rey.png" alt="rey" width=75% height=100%>
+                        </div>
+                        <div class="col-9 p-3">
+                            <div class="name">Rey Walker</div>
+                            <div class="line"></div>
+                            <div class="dialog2">there is no time to waste the darth vader army is ready to initiate the strike  against our planet “ORYN HAS NEVER GAVE UP AND WILL NEVER GIVE UP”</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 dialog" id="dialog7" style="margin-top: 6rem !important;">
+                <a href="game.html" class="btns" style="width: 15% !important;">Get Started</a>
+            </div>
+        </div>
+    </div>
+    <div class="container d-block d-xl-none" style="box-sizing: border-box !important;overflow: hidden;">
+        <div class="row justify-content-center mx-auto" >
+            <div class="col-12 text-center">
+                <img src="./img/logo-01.svg" alt="logo" width="100" height="100">
+            </div>
+            <div class="col-12">
+                <div class="animations">
+                    <div class="overlay"></div>
+                    <div class="frame">
+                      <canvas id="vader" width="500" height="500"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <div style="color:#ffae00 !important">This Version of StarWar Game can only play on Large Screens</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function showonlyone(thechosenone) {
+        $('.dialog').each(function (index) {
+            if ($(this).attr("id") == thechosenone) {
+                $(this).show(600);
+            }
+            else {
+                $(this).hide(700);
+            }
+        });
+    }
+</script>
+<script src="js/animations.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</html>
