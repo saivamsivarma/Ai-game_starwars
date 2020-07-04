@@ -48,7 +48,7 @@ body {
     transition: ease-in 0.5s;
 }
 
-.name{
+.char-name{
     color:#FFC107!important;
     font-size: 1.3rem !important;
 }
